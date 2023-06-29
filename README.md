@@ -19,3 +19,8 @@ Django app create called searchengine in order to have better test integration c
 Configuration:
 
 usage of nginx as reverse proxy.
+
+To Run Test:
+
+`cd api/searchapp`
+`pytest`
