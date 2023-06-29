@@ -35,7 +35,7 @@ class TestSerializers:
         expected_keys = set(['profile_picture', 'name', 
                              'profile_url', 'profile_html_url', 
                              'repos_url', 'bio', 'email', 'blog', 
-                             'company', 'location'])
+                             'company', 'location', 'id'])
         # action
         serialized_user_data = user_serializer(inbound_data)
 
@@ -176,7 +176,7 @@ class TestSerializers:
             'disabled',
             'allow_forking',
             'forks',
-            'visibility'])
+            'visibility', 'id'])
         # action
         serialized_repo_data = repository_serializer(inbound_data) 
         assert expected_keys == serialized_repo_data.keys()
@@ -294,7 +294,8 @@ class TestSerializers:
             'updated_at',
             'locked',
             'body',
-            'assignee'
+            'assignee',
+            'id'
         ])
         # action 
         serialized_data = issue_serializer(inbound_data)
