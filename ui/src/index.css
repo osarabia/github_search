@@ -1,0 +1,25 @@
+:root{
+    --position: absolute;
+    --top: 46%;
+    --transform: translate(0, -50%);
+    --left: 0;
+    --right: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#root{
+    position: absolute;
+    top: var(--top);
+    transform: var(--transform);
+    margin: 3em;
+    margin-right: 3em;
+    left: 0;
+    right: 0;
+}
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

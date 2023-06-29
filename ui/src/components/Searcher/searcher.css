@@ -1,0 +1,50 @@
+header{
+    margin-bottom: 1em;
+}
+i{
+    font-size: 2.5em;
+}
+span {
+    font-size: 1em;
+    color: gray;
+}
+#header-content{
+    display: flex;
+    align-items: center;
+}
+#title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.7em;
+}
+#title p{
+    margin: 0;
+    font-weight: bold;
+}
+input[type=text], select {
+    width: 28%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  ::placeholder{
+    font-size: 1.3em;
+  }
+  #search{
+    display: flex;
+  }
+  #entities{
+    appearance: none;
+    background: transparent;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px), calc(100% - 15px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    color: gray;
+    font-size: 1em;
+    margin-left: 1em;
+    width: 12%;
+  }
